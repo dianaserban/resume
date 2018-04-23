@@ -11,10 +11,17 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
     <div class="container-fluid">
+
       <div class="row">
-        <div class="col-lg-2 bg-white p-3">
-    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+
+        <div id="myCollapsible"   class="collapse col-lg-2 bg-white p-3">
+
+
+
+    <div  class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <div class="bd-brand-logos">
         <div class="bd-brand-item mb-5">
           <a href="index.html"><img src="images/portrait.jpg" class="border border-info rounded img-fluid mx-auto d-block" /></a></div></div>
@@ -27,9 +34,12 @@
       <a class="nav-link p-2 my-1 border border-info text-info rounded-right font-weight-bold text-center bg-white" id="v-pills-blog-tab" data-toggle="pill" href="#v-pills-blog" role="tab" aria-controls="v-pills-blog" aria-selected="false">Blog</a>
       <a class="nav-link p-2 my-1 border border-success text-white rounded-right font-weight-bold text-center bg-success" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
     </div></div>
-<div class="col-lg-10 p-1">
+<div class="col p-1">
     <div class="tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade show active p-3" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <a class="btn btn-primary" data-toggle="collapse" href="#myCollapsible" role="button" aria-expanded="false" aria-controls="myCollapsible">
+        Link with href
+        </a>
         <span
                     class="txt-rotate"
                     data-period="2000"
@@ -111,6 +121,10 @@ E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al un
           <h4 id="three">three</h4>
           <p>...</p>
         </div>
+        <button type="button" class="close" aria-label="Close">
+  <span aria-hidden="true">&times; fdfddf</span>
+
+</button>
 
 
 
@@ -127,6 +141,7 @@ E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al un
 
 </div>
 </div>
+
 <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
