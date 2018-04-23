@@ -34,8 +34,8 @@
                     class="txt-rotate"
                     data-period="2000"
                     data-rotate='[  "Hello!", "My Name is Diana .", "Welcome to my resume!", "Have fun!" ]'></span>
-        <img src="images/wallpaper.png" class="img-fluid" />
-<p>Ce este Lorem Ipsum?
+        <img src="images/wallpaper.png" class="img-fluid rounded" />
+<p class="rounded py-3 bg-light">Ce este Lorem Ipsum?
 Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.
 
 De ce îl folosim?
@@ -78,7 +78,43 @@ E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al un
 <br style="clear: left;" />
       </div>
 
-      <div class="tab-pane fade bg-primary" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+      <div class="tab-pane fade bg-primary" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#fat">@fat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mdo">@mdo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#one">one</a>
+                <a class="dropdown-item" href="#two">two</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+          <h4 id="fat">@fat</h4>
+          <p>...</p>
+          <h4 id="mdo">@mdo</h4>
+          <p>...</p>
+          <h4 id="one">one</h4>
+          <p>...</p>
+          <h4 id="two">two</h4>
+          <p>...</p>
+          <h4 id="three">three</h4>
+          <p>...</p>
+        </div>
+
+
+
+      </div>
       <div class="tab-pane fade bg-success" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">...</div>
       <div class="tab-pane fade bg-info" id="v-pills-journey" role="tabpanel" aria-labelledby="v-pills-journey-tab">...</div>
         <div class="tab-pane fade bg-info" id="v-pills-freebies" role="tabpanel" aria-labelledby="v-pills-freebies-tab">...</div>

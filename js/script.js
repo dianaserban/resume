@@ -18,7 +18,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<h1 class="text-center wrap p-0">'+this.txt+'</h1>';
+  this.el.innerHTML = '<h1 class="text-center wrap p-0 rounded">'+this.txt+'</h1>';
 
   var that = this;
   var delta = 300 - Math.random() * 100;
