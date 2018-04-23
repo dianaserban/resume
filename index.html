@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,9 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
           integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hello World</title>
+
 </head>
 <body>
+<div id="result"></div>
+<script type="text/x-tmpl" id="tmpl-demo">
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-2 bg-white p-3">
@@ -55,34 +59,14 @@
                 data-period="2000"
                 data-rotate='[  "Hello!", "My Name is Diana .", "Welcome to my resume!", "Have fun!" ]'></span>
                     <img src="images/wallpaper.png" class="img-fluid"/>
-                    <p>Ce este Lorem Ipsum?
-                        Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a
-                        fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o
-                        planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele
-                        respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia
-                        electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor
-                        Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru
-                        calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.
-
-                        De ce îl folosim?
-                        E un fapt bine stabilit că cititorul va fi sustras de conţinutul citibil al unei pagini atunci
-                        când se uită la aşezarea în pagină. Scopul utilizării a Lorem Ipsum, este acela că are o
-                        distribuţie a literelor mai mult sau mai puţin normale, faţă de utilizarea a ceva de genul
-                        "Conţinut aici, conţinut acolo", făcându-l să arate ca o engleză citibilă. Multe pachete de
-                        publicare pentru calculator şi editoare de pagini web folosesc acum Lorem Ipsum ca model
-                        standard de text, iar o cautare de "lorem ipsum" va rezulta în o mulţime de site-uri web în
-                        dezvoltare. Pe parcursul anilor, diferite versiuni au evoluat, uneori din intâmplare, uneori
-                        intenţionat (infiltrându-se elemente de umor sau altceva de acest gen).
-
-                    </p>
+                    <p>{%=o.description%}</p>
 
                     <div class="col-lg-4 float-left mt-1">
                         <div class="card">
                             <img class="card-img-top img-fluid" src="images/card1.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h5 class="card-title">{%=o.card_title_1%}</h5>
+                                <p class="card-text">{%=o.card_description_1%}</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
@@ -92,9 +76,8 @@
                         <div class="card">
                             <img class="card-img-top img-fluid" src="images/card1.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h5 class="card-title">{%=o.card_title_2%}</h5>
+                                <p class="card-text">{%=o.card_description_2%}</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
@@ -104,9 +87,8 @@
                         <div class="card">
                             <img class="card-img-top img-fluid" src="images/card1.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <h5 class="card-title">{%=o.card_title_3%}</h5>
+                                <p class="card-text">{%=o.card_description_3%}</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
@@ -139,6 +121,7 @@
 
     </div>
 </div>
+</script>
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -149,6 +132,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+<script src="js/template.js"></script>
+<script src="js/content.js"></script>
 
 </body>
 </html>
